@@ -8,7 +8,6 @@ function CountryData() {
   const [countryInfo, setCountryInfo] = useState([]);
   useEffect(() => {
     getCountryData();
-    document.title = "Countries Info";
   }, []);
   async function getCountryData(req, res, region, URL) {
     region = "Asia";

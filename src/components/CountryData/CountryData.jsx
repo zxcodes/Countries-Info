@@ -11,7 +11,7 @@ function CountryData() {
   }, []);
   async function getCountryData(req, res, region, URL) {
     region = "Asia";
-    URL = `https://restcountries.eu/rest/v2/region/${region}`;
+    URL = `https://restcountries.com/v3.1/region/${region}`;
     req = await fetch(URL);
     res = await req.json();
     setCountryInfo(res);
